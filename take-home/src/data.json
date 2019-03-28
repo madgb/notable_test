@@ -1,0 +1,65 @@
+{
+    "patientData": [{
+            "name": "Hibbert",
+            "email": "hibbert@notable.com",
+            "schedule": [{
+                    "name": "A",
+                    "time": "8:00AM",
+                    "kind": "kinda"
+                },
+                {
+                    "name": "B",
+                    "time": "9:00AM",
+                    "kind": "kindb"
+                },
+                {
+                    "name": "C",
+                    "time": "10:00AM",
+                    "kind": "kindc"
+                }
+
+            ]
+        },
+        {
+            "name": "Krieger",
+            "email": "Krieger@notable.com",
+            "schedule": [{
+                    "name": "A",
+                    "time": "8:00AM",
+                    "kind": "kinda"
+                },
+                {
+                    "name": "B",
+                    "time": "9:00AM",
+                    "kind": "kindb"
+                },
+                {
+                    "name": "C",
+                    "time": "10:00AM",
+                    "kind": "kindc"
+                }
+
+            ]
+        },
+        {
+            "name": "Riviera",
+            "email": "Riviera@notable.com",
+            "schedule": [{
+                    "name": "A",
+                    "time": "8:00AM",
+                    "kind": "kinda"
+                },
+                {
+                    "name": "B",
+                    "time": "9:00AM",
+                    "kind": "kindb"
+                },
+                {
+                    "name": "C",
+                    "time": "10:00AM",
+                    "kind": "kindc"
+                }
+            ]
+        }
+    ]
+}

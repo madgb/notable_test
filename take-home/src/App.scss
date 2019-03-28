@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+}
+.cal-wrapper{
+  margin: 0 auto;
+  max-width: 1440px;
+  .inner{
+    padding: 3rem;
+  }
+  .left, .right{
+    width: 50%;
+  }
+  .col{
+    width: 15%;
+  }
+  .col-40{
+    width: 35%;
+  }
+}
