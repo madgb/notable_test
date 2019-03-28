@@ -69,22 +69,24 @@ class App extends Component {
     const { currName, email, schedules, flag, docNames } = this.state
     return (
       <div className="App">
-        <h1>Notable Calender</h1>
+        <h1 className="tx-center">Notable Calender</h1>
         <section>
           <div className="cal-wrapper">
             <div className="inner flex">
               <div className="left left-list">
-                <div className="inner">
-                  <h4>notable</h4>
+                <div className="inner inner-con grey-bg">
+                  <h4 className="logo">notable</h4>
                   <div className="content">
                     <p>PHISICIANS</p>
                     <ul>
                       {
                         !docNames.length ? <div>LOADING DATA...</div> :
-                        docNames.map( d => (<li data-name={d.name} onClick={this.getSchedule}>{d.name}</li>))
+                        docNames.map( d => (<li key={docNames.indexOf(d)} className={ currName === d.name ? 'blue-bg' : ''} data-name={d.name} onClick={this.getSchedule}>{d.name}</li>))
                       }
                     </ul>
-                    <button>LOGOUT</button>
+                    <div className="btn-wrapper">
+                      <button>LOGOUT</button>
+                    </div>
                   </div>
                 </div>
               </div>

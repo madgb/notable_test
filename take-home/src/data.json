@@ -5,17 +5,27 @@
             "schedule": [{
                     "name": "A",
                     "time": "8:00AM",
-                    "kind": "kinda"
+                    "kind": "New Patient"
                 },
                 {
                     "name": "B",
                     "time": "9:00AM",
-                    "kind": "kindb"
+                    "kind": "Follow Up"
                 },
                 {
                     "name": "C",
                     "time": "10:00AM",
-                    "kind": "kindc"
+                    "kind": "Follow Up"
+                },
+                {
+                    "name": "C",
+                    "time": "10:00AM",
+                    "kind": "Follow Up"
+                },
+                {
+                    "name": "C",
+                    "time": "10:00AM",
+                    "kind": "Follow Up"
                 }
 
             ]
@@ -26,7 +36,7 @@
             "schedule": [{
                     "name": "A",
                     "time": "8:00AM",
-                    "kind": "kinda"
+                    "kind": "New Patient"
                 },
                 {
                     "name": "B",
@@ -37,6 +47,16 @@
                     "name": "C",
                     "time": "10:00AM",
                     "kind": "kindc"
+                },
+                {
+                    "name": "A",
+                    "time": "8:00AM",
+                    "kind": "New Patient"
+                },
+                {
+                    "name": "A",
+                    "time": "8:00AM",
+                    "kind": "New Patient"
                 }
 
             ]
@@ -47,7 +67,7 @@
             "schedule": [{
                     "name": "A",
                     "time": "8:00AM",
-                    "kind": "kinda"
+                    "kind": "New Patient"
                 },
                 {
                     "name": "B",
@@ -58,6 +78,11 @@
                     "name": "C",
                     "time": "10:00AM",
                     "kind": "kindc"
+                },
+                {
+                    "name": "A",
+                    "time": "8:00AM",
+                    "kind": "New Patient"
                 }
             ]
         }

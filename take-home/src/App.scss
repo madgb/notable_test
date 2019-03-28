@@ -1,9 +1,25 @@
 *{
   box-sizing: border-box;
 }
+ul, ol{
+  list-style-type: none;
+  padding: 0;
+}
+$blue: #3669ff;
+
 .flex{
   display: flex;
   flex-flow: row wrap;
+}
+.grey-bg{
+  background-color: #ececec;
+}
+.blue-bg{
+  background-color: $blue;
+  color: #fff;
+}
+.tx-center{
+  text-align: center;
 }
 .cal-wrapper{
   margin: 0 auto;
@@ -11,13 +27,115 @@
   .inner{
     padding: 3rem;
   }
-  .left, .right{
-    width: 50%;
+  .inner-con{
+    padding: 0;
+    .logo{
+      margin: 0 0 3rem 0;
+      color: $blue;
+      font-size: 3rem;
+      padding: 1rem 2rem;
+    }
+    p{
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 0 2rem;
+    }
+    ul{
+
+    }
+    li{
+      position: relative;
+      cursor: pointer;
+      padding: 0.6rem 2rem 0.6rem 3.5rem;
+    }
+    li::after{
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border: 1px solid #9e9e9e;
+      border-radius: 50%;
+      top: 0;
+      left: 2rem;
+      top: 1rem;
+    }
+    .content{
+      .btn-wrapper{
+        padding: 5rem 0;
+      }
+      button{
+        background: $blue;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        /* padding: 1rem 2rem; */
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem;
+        margin: 0 auto;
+        display: block;
+      }
+    }
   }
+  
   .col{
     width: 15%;
   }
   .col-40{
     width: 35%;
+  }
+
+
+  .right{
+    h4{
+      font-size: 3rem;
+      margin: 0;
+    }
+    &>p{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .table-wrapper{
+      border: 1px solid #ececec;
+      &>div:last-child{
+        border: none;
+      }
+      &>div:nth-child(odd){
+        background-color: #ececec;
+      }
+      &>div.table-header{
+        background-color: $blue;
+        color: #fff
+      }
+    }
+    
+    .table-header, .table-inner{
+      font-size: 20px;
+      border-bottom: 1px solid #ececec;
+    }
+    
+    .col, .col-40{
+      padding: 0.7rem 1rem;
+    }
+    .table-inner{
+      .col, .col-40{
+        border-right: 1px solid #ececec;
+      }
+      &>div:last-child{
+        border: none;
+      }
+    }
+  }
+  .left{
+    width: 30%;
+    @media(max-width: 768px){
+      width: 100%;
+    }
+  }
+  .right{
+    width: 70%;
+    @media(max-width: 768px){
+      width: 100%;
+    }
   }
 }
